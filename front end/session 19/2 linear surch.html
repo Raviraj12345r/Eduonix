@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Search</title>
+</head>
+<body>
+
+
+    <h1>Linear Search</h1>
+
+    <h2>{id:1,name:"Rishikesh"},
+        {id:2,name:"Abhishek"},
+        {id:3,name:"Sakshi"},
+        {id:4,name:"Nikunj"},
+        {id:5,name:"Subhadip"},
+        {id:6,name:"Anjali"},
+        {id:7,name:"Gaurav"},
+        {id:8,name:"Alex"},
+        {id:9,name:"Jhon"},
+        {id:10,name:"Catty"}</h2>
+     
+    <script>
+       
+        const array=[
+            {id:1,name:"Rishikesh"},
+            {id:2,name:"Abhishek"},
+            {id:3,name:"Sakshi"},
+            {id:4,name:"Nikunj"},
+            {id:5,name:"Subhadip"},
+            {id:6,name:"Anjali"},
+            {id:7,name:"Gaurav"},
+            {id:8,name:"Alex"},
+            {id:9,name:"Jhon"},
+            {id:10,name:"Catty"}
+        ];
+
+        let found =false; //boolean data type
+
+        const temp=prompt("Enter name to Search");
+
+        //write a program to find name entered by user
+
+        for(let i=0;i<array.length;i++){
+             if(array[i].name==temp) {
+                found=true;
+                document.write(`${temp} found at index ${i} and its <b>id</b> is ${array[i].id} <br>`);
+                 
+                // print the index of array
+                break;
+             }
+        }
+        if(!found){
+             document.write(`${temp} Not found , Array out of index`);
+             // print array put of index
+        }
+
+
+         
+
+    </script>
+
+    
+</body>
+</html>
